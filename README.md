@@ -49,6 +49,19 @@ In this project we are developing an online patient monitoring database for a si
 - Device/sensor integration and automatic diagnosis
 - Multiple departments or hospitals
 
+### Database tables
+
+The database consists of six tables.
+
+| Table | Purpose | How it is used |
+|---|---|---|
+| `Users` | Staff accounts: username, full name, password hash, role (admin / doctor / nurse) and active status. | Login and role check on every request. Accounts are deactivated, not deleted. |
+| `Patients` | Basic patient information: unique patient number, full name, birth date. | Created by the administrator; opened as the patient profile by assigned staff. |
+| `PatientStaff` | Which doctor or nurse is currently assigned to which patient (many-to-many). | Every clinical access checks this table: staff see only their own patients. |
+| `MeasurementTypes` | Measurement types and their units: body temperature (°C), pulse (bpm), systolic and diastolic blood pressure (mmHg). | Selected when a measurement is entered; the unit always comes from here. |
+| `Measurements` | Each observation as a separate row: patient, type, value, observation time, record time, recorded by. | Assigned staff add measurements; the doctor reviews the history on the patient profile. |
+| `Messages` | Task messages: patient, sender (doctor), recipient (doctor/nurse), text, status (Pending / Completed), result. | The doctor sends a task; the recipient completes it by writing the result. |
+
 ### Technologies
 
 | Area | Tool |
@@ -134,6 +147,19 @@ Bu projede bir hastanenin tek bir bölümü için çevrim içi bir hasta izleme 
 - Randevu, reçete ve faturalama
 - Cihaz/sensör bağlantısı ve otomatik teşhis
 - Birden fazla bölüm veya hastane
+
+### Veritabanı tabloları
+
+Veritabanı altı tablodan oluşur.
+
+| Tablo | Görevi | Nasıl kullanılır? |
+|---|---|---|
+| `Users` | Personel hesapları: kullanıcı adı, ad soyad, parola özeti, rol (yönetici / doktor / hemşire) ve aktiflik bilgisi. | Girişte ve her istekte rol kontrolü için kullanılır. Hesaplar silinmez, pasifleştirilir. |
+| `Patients` | Hastanın temel bilgileri: benzersiz hasta numarası, ad soyad, doğum tarihi. | Yönetici tarafından kaydedilir; atanmış personel hasta profili olarak açar. |
+| `PatientStaff` | Hangi doktor veya hemşirenin hangi hastaya atandığı (çoktan çoğa ilişki). | Her klinik erişimde kontrol edilir: personel yalnızca kendi hastalarını görür. |
+| `MeasurementTypes` | Ölçüm türleri ve birimleri: vücut sıcaklığı (°C), nabız (bpm), sistolik ve diyastolik kan basıncı (mmHg). | Ölçüm girilirken seçilir; birim her zaman buradan alınır. |
+| `Measurements` | Her ölçüm ayrı bir satır: hasta, tür, değer, ölçüm zamanı, kayıt zamanı, kaydeden kişi. | Atanmış personel ölçüm ekler; doktor geçmişi hasta profilinde inceler. |
+| `Messages` | Görev mesajları: hasta, gönderen (doktor), alıcı (doktor/hemşire), metin, durum (Bekliyor / Tamamlandı), sonuç. | Doktor görev gönderir; alıcı sonucu yazarak görevi tamamlar. |
 
 ### Kullanılacak teknolojiler
 
