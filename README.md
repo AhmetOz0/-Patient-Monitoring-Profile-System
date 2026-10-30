@@ -77,15 +77,15 @@ The database consists of six tables.
 #### Phase 1 — Design and report (60%)
 Deadline: last Friday of week 7 · Presentation: week 9
 
-- [ ] Introduction (project description, problem, goals, scope, method, hardware/software)
-- [ ] Literature review (at least 20 papers from 2014 onwards)
-- [ ] Research methodology
-- [ ] Entity modeling and business rules
-- [ ] ER and UML diagrams, table design
-- [ ] Relational algebra
-- [ ] Indexing structures
-- [ ] Algorithms for relational databases
-- [ ] Experiment and evaluation plan
+- [x] Introduction (project description, problem, goals, scope, method, hardware/software)
+- [x] Literature review (at least 20 papers from 2014 onwards)
+- [x] Research methodology
+- [x] Entity modeling and business rules
+- [x] ER and UML diagrams, table design
+- [x] Relational algebra
+- [x] Indexing structures
+- [x] Algorithms for relational databases
+- [x] Experiment and evaluation plan
 
 #### Phase 2 — Implementation (40%)
 Deadline: last Friday of week 12 · Demo: week 13
@@ -176,15 +176,15 @@ Veritabanı altı tablodan oluşur.
 #### Phase 1 — Tasarım ve rapor (%60)
 Teslim: 7. haftanın son Cuması · Sunum: 9. hafta
 
-- [ ] Giriş (proje tanımı, problem, hedefler, kapsam, yöntem, donanım/yazılım)
-- [ ] Literatür taraması (2014 sonrası en az 20 yayın)
-- [ ] Araştırma yöntemi
-- [ ] Varlık modelleme ve iş kuralları
-- [ ] ER ve UML diyagramları, tablo tasarımı
-- [ ] İlişkisel cebir
-- [ ] İndeks yapıları
-- [ ] İlişkisel veritabanı algoritmaları
-- [ ] Deney ve değerlendirme planı
+- [x] Giriş (proje tanımı, problem, hedefler, kapsam, yöntem, donanım/yazılım)
+- [x] Literatür taraması (2014 sonrası en az 20 yayın)
+- [x] Araştırma yöntemi
+- [x] Varlık modelleme ve iş kuralları
+- [x] ER ve UML diyagramları, tablo tasarımı
+- [x] İlişkisel cebir
+- [x] İndeks yapıları
+- [x] İlişkisel veritabanı algoritmaları
+- [x] Deney ve değerlendirme planı
 
 #### Phase 2 — Uygulama (%40)
 Teslim: 12. haftanın son Cuması · Demo: 13. hafta
@@ -206,17 +206,17 @@ docs/     Görev dağılımı ve katkı kayıtları
 
 ## Team / Ekip
 
-| Name / Ad Soyad | GitHub | Responsibility / Sorumluluk |
-|---|---|---|
-| | | Team leader, coordination / Grup lideri, koordinasyon |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
+| Name / Ad Soyad | Responsibility / Sorumluluk |
+|---|---|
+| Talha Kılınçaslan | Team leader, methodology, evaluation plan / Grup lideri, yöntem, deney planı |
+| Ahmed Emin Özaslan | Introduction, README, report compilation / Giriş, README, raporun derlenmesi |
+| Aslı Polat | Business rules K01–K15, draw.io ER guide / İş kuralları K01–K15, draw.io ER rehberi |
+| Zeynep Şule Akın | Business rules K16–K24, literature 1–10 / İş kuralları K16–K24, literatür 1–10 |
+| İbrahim Çakır | ER diagram, abstract / ER diyagramı, özet |
+| Muhammed Güzel | UML diagram, literature 11–20, references / UML diyagramı, literatür 11–20, kaynakça |
+| Osman Salih Akbulut | Table design (core), tables overview / Tablo tasarımı (çekirdek), tablo özeti |
+| Muhammed Emir Köroğlu | Table design (clinical), 3NF, indexing / Tablo tasarımı (klinik), 3NF, indeksler |
+| Aslı Didem Aslan | Relational algebra, algorithms / İlişkisel cebir, algoritmalar |
 
 **Working rule:** Every member commits and pushes their own part from their own GitHub account, with a commit message that clearly states the work done (e.g. `Literature: first 10 papers added`). Each member prepares a short contribution record with the Phase 1 submission.
 
